@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http.equiv="x-UA-Compatible"content="IE=edge">
+     <meta name="viewport"content="width-device-width,initial-scale-1.0">
+     <title>personal portfolio website</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+ <body>
+   <div id="header">
+     <div class="container">
+        <nav>
+            <img src="images/Eva Name Tattoo Designs.jpg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Indie Game Developer</p>
+            <h1>
+                Hi,I'm <span>Evalyne</span> Mukhwana 
+                <br>From Kenya
+            </h1>
+
+        </div>
+     </div>
+      
+   </div>
+   <!---------------about----------------> 
+<div id="about"> 
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/Screenshot_20220206-125734.jpg">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About me</h1>
+        <p>
+          I am an avid game developer and a proud master's graduate from MIT.<br>
+           With a relentless work ethic and an unwavering passion for all things related to game design,
+           I've dedicated myself to pushing the boundaries of interactive entertainment. <br>
+           My journey at MIT has equipped me with the skills and knowledge to create immersive and innovative gaming experiences. <br>
+           I thrive on challenges, constantly seeking new ways to hone my craft and stay at the forefront of the ever-evolving gaming industry. <br>
+           My commitment to the art and science of game development is not only a profession but a true labor of love.
+        </p>
+
+
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links "onclick="opentab('education')">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>UI?UX</span><br>Designing gaming interface</li>
+            <li><span>2D Art and Animation</span><br>skills in creating  2D art assets and animation</li>
+            <li><span>Master at unity and real engine</span><br>I will bring the game of your desires to life</li>
+
+          </ul>
+        </div>
+        <div class="tab-contents " id="experience">
+          <ul>
+            <li><span>2020-2021</span><br>team leader at Epic Game campany</li>
+            <li><span>2016-2017</span><br>intership at Nintendo </li>
+            <li><span>Master at unity and real engine</span><br>I will bring the game of your desires to life</li>
+
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2016</span><br>UI?UX Design Training at ET Institute</li>
+            <li><span>2016</span><br>Kisii University in Kenya</li>
+            <li><span>2020</span><br>MIT in USA</li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!------------- services------------>
+<div id="service">
+  <div class="cointainer">
+    <h1 class="sub-title">My Services</h1>
+<div class="services-list">
+<div>
+ <h2>Game developer and Designer</h2>
+ <p>make all games indie according to your tast and design</p>
+ <a href="#">learn more</a>
+</div>
+<div>
+  <h2>UI/UX Design</h2>
+  <p>make all games indie according to your tast and design</p>
+  <a href="#">learn more</a>
+ </div>
+ <div>
+  <h2>2D creator</h2>
+  <p>make all games indie according to your tast and design</p>
+  <a href="#">learn more</a>
+ </div>
+
+</div>
+  </div>
+</div>
+<!-------------porfolio--------->
+<div id="porfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/work-1.png" >
+        <div class="layer">
+          <h3>gamers media app</h3>
+          <p>the game enertains you</p>
+          <a href="#"></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-2.png" >
+        <div class="layer">
+          <h3>Gamimg app</h3>
+          <p>the game enertains you</p>
+          <a href="#"></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-3.png" >
+        <div class="layer">
+          <h3>music  app</h3>
+          <p>the game enertains you</p>
+          <a href="#"></a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-------------contact---------------->
+<div id="contact">
+  <div class="conatiner">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub_title">contact me</h1>  
+        <p> contact@example.com</p>
+        <p>0090802732979</p><br>
+
+        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+        
+      </div>
+      <div class="contact-right"></div>
+      <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your name" required>
+        <input type="email "name="email" placeholder="Your email"required>
+        <textarea name="Message"rows="6" placeholder="Your message"></textarea>
+          <button type="submit" class=" btn btn2">submit</button>
+          
+
+      </form>
+      
+    </div>
+   
+
+  </div>
+</div>
+
+<script>
+  var tablinks= document.getElementsByClassName("tab-links");
+  var tabcontents= document.getElementsByClassName("tab-contents");
+
+
+  function opentab(tabname){
+    for (tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+  }
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwmmjR4KmwqyDKGF4QAfXMw9lzhBrMWGBexRB8od2kD4BBtdbbarFl0hCqQGtgVXjkw/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+ </body>
+</html>
